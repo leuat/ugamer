@@ -21,7 +21,7 @@ public class gamer : MonoBehaviour {
 	private PanelGalaxyRenderer pnlGalaxyRenderer;	
 	private PanelScene pnlScene;
 	private GamerPanel currentPanel;
-	private GameObject p1, p2;
+	private GameObject p1, p2, p3;
 	public static Fits altImage;
 	private bool toggle = false;
  	private Vector3 MousePos, MousePosOld;
@@ -64,11 +64,22 @@ public class gamer : MonoBehaviour {
 		altMaterial = (Material)Resources.Load ("matAltGalaxy");
 		p1 = GameObject.Find ("PlaneGalaxy");
 		p2 = GameObject.Find ("PlaneAltGalaxy");
+		p3 = GameObject.Find ("PlaneGalaxyGPU");
 		Settings.SetupGamer();
 		pnlGalaxyRenderer = new PanelGalaxyRenderer( GameObject.Find ("pnlGalaxyRender"));
 		pnlSettings = new PanelSettings( GameObject.Find ("pnlSettings"));
 		pnlScene = new PanelScene( GameObject.Find ("pnlScene"));
-		
+
+            if (Settings.useGPU)
+            {
+                p1.SetActive(false);
+                p2.SetActive(false);
+                material = (Material)Resources.Load("matGPU");
+            }
+            else
+                p3.SetActive(false);
+
+
 		//pnlGalaxyRenderer.SetActive(false);		
 
 		

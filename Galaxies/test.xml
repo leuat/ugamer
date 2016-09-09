@@ -41,11 +41,12 @@
       <scale>0</scale>
       <noiseOffset>0</noiseOffset>
       <noiseTilt>0</noiseTilt>
+      <ks>1</ks>
     </ComponentParams>
     <ComponentParams>
       <className>Dust</className>
       <spectrum>Blue</spectrum>
-      <strength>25</strength>
+      <strength>50</strength>
       <arm>0.3</arm>
       <z0>0.03</z0>
       <r0>0.35</r0>
@@ -55,6 +56,7 @@
       <scale>1</scale>
       <noiseOffset>1</noiseOffset>
       <noiseTilt>-1.5</noiseTilt>
+      <ks>1</ks>
     </ComponentParams>
     <ComponentParams>
       <className>Stars</className>
@@ -69,20 +71,22 @@
       <scale>5</scale>
       <noiseOffset>0.35</noiseOffset>
       <noiseTilt>10</noiseTilt>
+      <ks>1</ks>
     </ComponentParams>
     <ComponentParams>
       <className>Bulge</className>
       <spectrum>White</spectrum>
-      <strength>25</strength>
+      <strength>500</strength>
       <arm>1</arm>
       <z0>0.02</z0>
-      <r0>10</r0>
+      <r0>20</r0>
       <active>1</active>
       <delta>0</delta>
       <winding>0</winding>
       <scale>0</scale>
       <noiseOffset>0</noiseOffset>
       <noiseTilt>0</noiseTilt>
+      <ks>1</ks>
     </ComponentParams>
     <ComponentParams>
       <className>Dust</className>
@@ -97,13 +101,14 @@
       <scale>5</scale>
       <noiseOffset>0</noiseOffset>
       <noiseTilt>4</noiseTilt>
+      <ks>1</ks>
     </ComponentParams>
     <ComponentParams>
       <className>Disk</className>
       <spectrum>Cyan</spectrum>
       <strength>250</strength>
       <arm>0.02</arm>
-      <z0>0.04</z0>
+      <z0>0.1</z0>
       <r0>0.4</r0>
       <active>1</active>
       <delta>0</delta>
@@ -111,6 +116,7 @@
       <scale>1</scale>
       <noiseOffset>0</noiseOffset>
       <noiseTilt>-0.3</noiseTilt>
+      <ks>1</ks>
     </ComponentParams>
     <ComponentParams>
       <className>Stars</className>
@@ -125,6 +131,7 @@
       <scale>8</scale>
       <noiseOffset>0.05</noiseOffset>
       <noiseTilt>20</noiseTilt>
+      <ks>1</ks>
     </ComponentParams>
   </componentParams>
 </Galaxy>

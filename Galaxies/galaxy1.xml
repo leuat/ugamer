@@ -106,7 +106,7 @@
     <ComponentParams>
       <className>Stars</className>
       <spectrum>Blue</spectrum>
-      <strength>2</strength>
+      <strength>0.75</strength>
       <arm>0.45</arm>
       <z0>0.02</z0>
       <r0>0.45</r0>
@@ -131,6 +131,21 @@
       <scale>4</scale>
       <noiseOffset>0.15</noiseOffset>
       <noiseTilt>10</noiseTilt>
+      <ks>1</ks>
+    </ComponentParams>
+    <ComponentParams>
+      <className>Bulge</className>
+      <spectrum>Cyan</spectrum>
+      <strength>50</strength>
+      <arm>1</arm>
+      <z0>0.02</z0>
+      <r0>6</r0>
+      <active>1</active>
+      <delta>0</delta>
+      <winding>0</winding>
+      <scale>0</scale>
+      <noiseOffset>0</noiseOffset>
+      <noiseTilt>0</noiseTilt>
       <ks>1</ks>
     </ComponentParams>
   </componentParams>

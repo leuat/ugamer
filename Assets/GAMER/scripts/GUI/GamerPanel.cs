@@ -219,7 +219,7 @@ namespace LemonSpawn.Gamer
 
         protected void setInputValue(string name, float val)
         {
-            Debug.Log(name);
+//            Debug.Log(name);
             GameObject.Find(name).GetComponent<InputField>().text = "" + val;
         }
         protected void setInputValue(string name, string val)

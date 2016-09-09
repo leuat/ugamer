@@ -13,9 +13,32 @@ namespace LemonSpawn.Gamer {
 		public Vector3 orientation = new Vector3(0,1,0);
 		public Quaternion rotmat;
 		public string galaxyName;
-		
-		// Given this instancenew
-		public float workTheta, workRad, workWinding, workLength;
+
+        float[] header = new float[13];
+
+        public float[] toFloatArray()
+        {
+            float[] a = header;
+            a[0] = galaxy.param.windingB;
+            a[1] = galaxy.param.windingN;
+            a[2] = galaxy.param.noArms;
+            a[3] = galaxy.param.arm1;
+            a[4] = galaxy.param.arm2;
+            a[5] = galaxy.param.arm3;
+            a[6] = galaxy.param.arm4;
+            a[7] = position.x;
+            a[8] = position.y;
+            a[9] = position.z;
+            a[10] = orientation.x;
+            a[11] = orientation.y;
+            a[12] = orientation.z;
+
+            return a;
+        }
+
+
+        // Given this instancenew
+        public float workTheta, workRad, workWinding, workLength;
 		public float winding;
 		public float currentRadius;
 		

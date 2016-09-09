@@ -47,7 +47,10 @@ namespace LemonSpawn.Gamer {
 		public static string OutputDir = "OutputImages"+ FileSeparator;
         public static string OutputFitsDir = "fits" + FileSeparator;
         public static string GalaxyImageName = "galaxy";
-		
+
+
+        public static bool useGPU = false;
+
 		
 		public static string GetNextOutputFile(string dir) {
 			DirectoryInfo info = new DirectoryInfo(dir);

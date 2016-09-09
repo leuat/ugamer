@@ -127,6 +127,12 @@ namespace LemonSpawn.Gamer {
 
 
 
+        public void UpdateMaterial(Material m)
+        {
+            m.SetMatrix("_GamerViewMatrix", viewMatrix);
+            m.SetVector("_GamerCamera", camera);
+        }
+
 
         public void setupViewmatrix() {
 			Vector3 zaxis = (target-camera).normalized;

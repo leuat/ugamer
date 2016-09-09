@@ -318,9 +318,30 @@ namespace LemonSpawn.Gamer {
 		}
 		
 		
+        public void InitializeGPURendering()
+        {
+            RP.camera.UpdateMaterial(material);
+            GalaxyInstance g = galaxies[0];
+            //g.
+            //            UnityEngine.Debug.Log(material);
+
+            MaterialPropertyBlock materialProperty = new MaterialPropertyBlock();
+
+
+            materialProperty.SetFloatArray("_GamerArray", g.toFloatArray());
+            GameObject.Find("PlaneGalaxyGPU").GetComponent<Renderer>().SetPropertyBlock(materialProperty);
+
+            material.SetFloatArray("_GamerArray", g.toFloatArray());
+        }
+
 		public void InitializeRendering(Material mat) {
 			material = mat;
 			time = 0;
+            if (Settings.useGPU)
+            {
+                InitializeGPURendering();
+                return;
+            }
 //			currentTask = null;
 		    
 			int N = RP.no_procs;

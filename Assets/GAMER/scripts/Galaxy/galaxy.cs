@@ -24,29 +24,29 @@ public class GalaxyParams {
 		
 		public float warpAmplitude;
 		public float warpScale;
-		
-		
-/*		Spline<float, float>* splineWinding;
-		
-		void setupSplineWinding(int N) {
-			std::vector<float> xx;
-			std::vector<float> yy;
-			for (int i=0;i<N;i++) {
-				float rad = 1.0*((float)i/(float)N + 0.001);
-				//          float y =  atan((float)exp(-0.5/(rad))/windingB)*2*windingN;
-				float y =  atan((float)exp(-0.25/(0.5*rad))/windingB)*2*windingN;
-				
-				xx.push_back(rad);
-				yy.push_back(y);
-				//  cout << rad << " with " << y << endl;
-			}
-			splineWinding = new Spline<float, float>(xx,yy);
-			
-			
-		}
-		*/
-		
-		Vector3 camera;
+
+        /*		
+         *		Spline<float, float>* splineWinding;
+
+                void setupSplineWinding(int N) {
+                    std::vector<float> xx;
+                    std::vector<float> yy;
+                    for (int i=0;i<N;i++) {
+                        float rad = 1.0*((float)i/(float)N + 0.001);
+                        //          float y =  atan((float)exp(-0.5/(rad))/windingB)*2*windingN;
+                        float y =  atan((float)exp(-0.25/(0.5*rad))/windingB)*2*windingN;
+
+                        xx.push_back(rad);
+                        yy.push_back(y);
+                        //  cout << rad << " with " << y << endl;
+                    }
+                    splineWinding = new Spline<float, float>(xx,yy);
+
+
+                }
+                */
+
+        Vector3 camera;
 		
 		//  float dustScale;
 		//float diskScale;
